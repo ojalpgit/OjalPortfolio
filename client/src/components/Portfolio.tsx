@@ -27,7 +27,7 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Web Automation Tool",
+      title: "Automation Tool",
       description: "A powerful Python-based automation script that streamlines repetitive web tasks and data collection.",
       technologies: ["Python", "Selenium"],
       gradient: "from-blue-500 to-purple-500"
@@ -79,7 +79,7 @@ export default function Portfolio() {
             swapnil gore
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            14-year-old developer from India
+            20-year-old developer from India
           </p>
           <div className="flex justify-center space-x-6">
             <a 
