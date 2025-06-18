@@ -66,9 +66,11 @@
 @layer components {
   .grid-background {
     background-image: 
-      linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,0,0,.05) 1px, transparent 1px);
-    background-size: 50px 50px;
+      linear-gradient(rgba(0,0,0,.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,.08) 1px, transparent 1px),
+      linear-gradient(rgba(0,0,0,.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,.02) 1px, transparent 1px);
+    background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -79,18 +81,31 @@
   
   .dark .grid-background {
     background-image: 
-      linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+      linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
   }
   
   .ripple {
     position: fixed;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
-    transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: -1;
-    transition: width 0.3s ease, height 0.3s ease;
+    transform: translate(-50%, -50%);
+  }
+  
+  .ripple-wave {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.02) 40%, transparent 70%);
+    animation: ripple-expand 2s ease-out infinite;
+  }
+  
+  .dark .ripple-wave {
+    border: 2px solid rgba(99, 171, 255, 0.4);
+    background: radial-gradient(circle, rgba(99, 171, 255, 0.08) 0%, rgba(99, 171, 255, 0.03) 40%, transparent 70%);
   }
   
   .section-fade {
@@ -120,6 +135,10 @@
   .text-gradient {
     @apply bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent;
   }
+  
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
 }
 
 @keyframes fadeInUp {
@@ -141,6 +160,20 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes ripple-expand {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
   }
 }
 

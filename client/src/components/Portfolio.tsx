@@ -76,14 +76,14 @@ export default function Portfolio() {
       <section id="hero" className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center section-fade">
           <h1 className="text-6xl md:text-8xl font-bold mb-4 text-gradient">
-            aarav gupta
+            swapnil gore
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
             14-year-old developer from India
           </p>
           <div className="flex justify-center space-x-6">
             <a 
-              href="mailto:aarav@example.com" 
+              href="mailto:swapnil@example.com" 
               className="text-blue-500 hover:text-blue-400 transition-colors duration-300 text-lg"
             >
               <i className="fas fa-envelope mr-2"></i>mail
@@ -242,7 +242,7 @@ export default function Portfolio() {
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
             <a 
-              href="mailto:aarav@example.com" 
+              href="mailto:swapnil@example.com" 
               className="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:-translate-y-1"
             >
               <i className="fas fa-envelope mr-3"></i>
@@ -263,7 +263,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="text-center py-8 text-muted-foreground">
-        <p>&copy; 2024 Aarav Gupta. Built with passion and lots of coffee ☕</p>
+        <p>&copy; 2024 Swapnil Gore. Built with passion and lots of coffee ☕</p>
       </footer>
     </div>
   );
