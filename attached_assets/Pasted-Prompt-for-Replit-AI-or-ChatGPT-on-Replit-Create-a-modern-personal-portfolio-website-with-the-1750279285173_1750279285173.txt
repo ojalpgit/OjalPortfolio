@@ -1,0 +1,78 @@
+Prompt for Replit AI or ChatGPT on Replit:
+
+    Create a modern, personal portfolio website with the following specifications:
+
+🧱 GENERAL STRUCTURE
+
+    Use HTML, CSS, and optionally JavaScript (or React if preferred).
+
+    The website should follow a dark theme with a toggleable light/dark mode.
+
+    The layout should be responsive for both desktop and mobile.
+
+    Use a two-layer design:
+
+        Background layer: A subtle grid pattern across the whole page (like graph paper).
+
+        Foreground layer: An interactive content box with sections like About, Projects, Skills, Setup, and Contact.
+
+🧩 FEATURES & DESIGN
+1. Navigation Bar (Top Centered)
+
+    A horizontal nav bar centered at the top with links: about, projects, skills, setup, contact.
+
+    Smooth scroll to each section.
+
+    A small theme toggle button at the top-right labeled “light” or “dark”.
+
+2. Hero Section
+
+    Bold name in large font (e.g., aarav gupta).
+
+    Subtext below: 14-year-old developer from India.
+
+    Below that, clickable links to:
+
+        mail (mailto link),
+
+        github (external),
+
+        linkedin (external).
+
+3. About Section
+
+    Section title in bold (like about).
+
+    Description paragraph with a friendly, tech-focused tone (see image):
+
+        Talk about interests in coding, automation scripts, web/game dev, and open-source.
+
+        Mention a love for learning new programming languages and collaborating.
+
+4. Grid Background
+
+    Implement a CSS grid pattern:
+
+        Use ::before or background-image with CSS gradients or SVG.
+
+        Fixed to the body and behind all content.
+
+        Low contrast (e.g., very dark gray on black).
+
+5. Typography & Font
+
+    Use monospace fonts for tech feel (like Fira Code, JetBrains Mono, or Courier New).
+
+    Headings bold, section titles slightly larger.
+
+    Body text light-gray on black background for readability.
+
+🌐 EXTRAS
+
+    Add hover effects to nav links and social/contact links.
+
+    Add basic animations (fade-in or slide-up) on scroll using CSS or JS.
+
+    Highlight active section in navbar as user scrolls.
+
+    Optionally store theme preference in localStorage.
