@@ -61,7 +61,8 @@ export default function CursorRipple() {
         className="ripple"
         style={{ width: '120px', height: '120px' }}
       >
-        <div className="w-full h-full border border-blue-400/20 dark:border-blue-300/25 rounded-full bg-gradient-radial from-blue-400/5 via-blue-400/2 to-transparent" />
+        <div className="w-full h-full border border-blue-400/20 dark:border-blue-300/25 rounded-full" 
+             style={{ background: 'radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.02) 40%, transparent 70%)' }} />
       </div>
       
       {/* Click ripples */}

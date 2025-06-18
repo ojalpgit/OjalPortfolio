@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern, responsive personal portfolio website built with React, Express.js, and PostgreSQL. The application showcases a 14-year-old developer's skills, projects, and setup through an interactive dark/light themed interface with smooth animations and a distinctive grid background design.
+This is a modern, responsive personal portfolio website built with React, Express.js, and PostgreSQL. The application showcases Swapnil Gore, a 14-year-old developer's skills, projects, and setup through an interactive dark/light themed interface with smooth animations, a graph paper-style grid background, and realistic cursor ripple effects.
 
 ## System Architecture
 
@@ -98,7 +98,19 @@ This is a modern, responsive personal portfolio website built with React, Expres
 
 Preferred communication style: Simple, everyday language.
 
-## Changelog
+## Recent Changes
 
-Changelog:
-- June 18, 2025. Initial setup
+### June 18, 2025 - Enhanced Portfolio Features
+- Updated portfolio owner from Aarav Gupta to Swapnil Gore
+- Enhanced grid background to resemble graph paper with dual-layer grid pattern (20px and 100px)
+- Implemented realistic cursor ripple effects with smooth following animation
+- Added click-triggered expanding ripple waves with proper animations
+- Updated HTML meta tags and titles to reflect name change
+- Improved visual aesthetics with better contrast and theme-aware styling
+
+### June 18, 2025 - Initial Setup
+- Created modern portfolio website with React, TypeScript, and Tailwind CSS
+- Implemented dark/light theme toggle with localStorage persistence
+- Built island-style navigation with smooth scroll functionality
+- Added sections: Hero, About, Projects, Skills, Setup, Contact
+- Integrated Font Awesome icons and JetBrains Mono typography
